@@ -1,0 +1,94 @@
+#cbcfooter {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../assets/cbc-img.jpg");
+  background-color: #000;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 3px;
+  color: #fff;
+}
+
+.footerLogo img {
+  display: block;
+  width: 10em;
+  margin: 0 auto 40px auto;
+}
+#cbcfooter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.93);
+  z-index: 1;
+}
+
+/* keep content above overlay */
+#cbcfooter > * {
+  position: relative;
+  z-index: 2;
+}
+footer p {
+  text-align: left;
+  padding: 10px;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: inherit;
+}
+footer h3 {
+  text-align: left;
+  padding: 0 0 10px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+footer li,
+footer p {
+  padding: 10px 0;
+}
+footer li {
+  list-style: none;
+  display: block;
+  font-size: 0.8em;
+}
+footer a {
+  position: relative;
+  color: inherit;
+  padding: 0 0 2px 0;
+}
+footer a::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 70%;
+  /* transform: translateX(30%); */
+  border-radius: 4px;
+  background-color: var(--logo-yellow);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform-origin: left;
+  transform: scaleX(1);
+  color: color-mix(in srgb, var(--logo-yellow) 70%, transparent);
+}
+footer a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+.footerWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.socialLinks ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
