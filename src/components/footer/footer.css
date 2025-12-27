@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.93);
+  background: rgba(0, 0, 0, 0.86);
   z-index: 1;
 }
 
@@ -91,4 +91,17 @@ footer a:hover::before {
 .socialLinks ul li {
   display: inline-block;
   padding: 0 5px;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+svg:hover.social-icon path {
+  fill: var(--logo-yellow);
+  cursor: pointer;
+}
+.social-icons-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
 }
