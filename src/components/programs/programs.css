@@ -1,0 +1,45 @@
+.programs {
+  padding: 5em 0;
+}
+.programs h2 {
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  background: var(--logo-blue);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 1px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+.program-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.program-description {
+  font-size: 1em;
+  font-family: "open sans", sans-serif;
+  font-weight: 300;
+}
+.program-item {
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: var(--logo-blue);
+}
+.program-item h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: var(--logo-yellow);
+  display: inline-block;
+}
+.program-item li {
+  font-family: "Open sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}

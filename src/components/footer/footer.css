@@ -1,14 +1,11 @@
 #cbcfooter {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-image: url("../assets/cbc-img.jpg");
   background-color: #000;
   height: auto;
-  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   padding: 30px 0;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 3px;
   color: #fff;
@@ -23,7 +20,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.86);
+  background: rgba(0, 0, 0, 0.88);
   z-index: 1;
 }
 
@@ -64,7 +61,6 @@ footer a::before {
   position: absolute;
   height: 1px;
   width: 70%;
-  /* transform: translateX(30%); */
   border-radius: 4px;
   background-color: var(--logo-yellow);
   bottom: 0;
@@ -104,4 +100,15 @@ svg:hover.social-icon path {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+}
+
+.footerCopyright {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 30px 0 0 0;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #333333;
+}
+.social-icons-list a::before {
+  display: none;
 }

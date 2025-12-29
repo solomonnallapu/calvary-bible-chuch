@@ -1,0 +1,49 @@
+/* make the banner the positioned container */
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center; /* vertical center */
+}
+
+/* overlay */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* keep content above overlay */
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+.banner-text {
+  text-align: left;
+}
+
+.banner-text h1 span {
+  display: block;
+  letter-spacing: 0.01em;
+  padding: 5px 0;
+}
+.banner-text h1 span:first-of-type {
+  font-size: 1.5em;
+}
+.banner-text h1 span:last-of-type {
+  font-size: 4em;
+  font-weight: 600;
+  color: var(--logo-yellow);
+}
+.banner-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+}
