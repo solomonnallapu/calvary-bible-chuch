@@ -16,15 +16,6 @@ function Footer() {
           <img src={logo} alt="Calavary bible church logo" />
         </div>
         <div className="footerWrapper">
-          <div className="cbcLocation">
-            <h4 className="c-underline">LOCATION</h4>
-            <p>Calvary Bible Church</p>
-            <p>103, Bank Colony, Neredmet, </p>
-            <p>Secunderabad, Telangana 500056</p>
-            <p>
-              <a href="mailto:cbctruelife@gmail.com">cbctruelife@gmail.com</a>
-            </p>
-          </div>
           <div className="footerLinks">
             <h4 className="c-underline">QUICK LINKS</h4>
             <ul>
@@ -116,7 +107,7 @@ function Footer() {
               </li>
               {/* LinkedIn */}
               <li>
-                <a href="">
+                <a href="https://www.linkedin.com/in/emmanuel-akepogu-808968353/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
@@ -185,9 +176,28 @@ function Footer() {
               </li>
             </ul>
           </div>
+          <div className="cbcLocation">
+            <h4 className="c-underline">LOCATION</h4>
+            <p>Calvary Bible Church</p>
+            <p>103, Bank Colony, Neredmet, </p>
+            <p>Secunderabad, Telangana 500056</p>
+            <p>
+              <a href="mailto:cbctruelife@gmail.com">cbctruelife@gmail.com</a>
+            </p>
+          </div>
+          <div className="churchMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30444.334992290955!2d78.50378623328413!3d17.481627935499567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9b004e748b01%3A0x9b56ba08b9fdb2f!2sCalvary%20Bible%20Church!5e0!3m2!1sen!2sin!4v1767101614339!5m2!1sen!2sin"
+              style={{ border: 0 }}
+              height="auto"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <p className="footerCopyright">
-          © 2025&nbsp;
+          © 2026&nbsp;
           <a
             href="https://www.youtube.com/@CBCTRUELIFE"
             target="_blank"

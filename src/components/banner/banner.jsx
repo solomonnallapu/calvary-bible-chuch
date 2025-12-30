@@ -1,5 +1,6 @@
 import "./banner.css";
 import bannerBg from "../../assets/images/cross-banner.jpg";
+
 const Banner = () => {
   return (
     <section
