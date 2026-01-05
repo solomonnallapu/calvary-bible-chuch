@@ -14,9 +14,8 @@ const Banner = () => {
     >
       <div className="cbc-container">
         <div className="banner-text">
-          <h1>
-            <span>Welcome to</span> <span>CALVARY BIBLE CHURCH</span>
-          </h1>
+          <span>Welcome to</span>
+          <h1>CALVARY BIBLE CHURCH</h1>
           <p>
             Living for the glory of God and the good of the Church of Jesus
             Christ by preaching Expository sermons through the Bible

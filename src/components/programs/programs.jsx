@@ -2,11 +2,9 @@ import "./programs.css";
 const Programs = () => {
   return (
     <section className="programs">
-      <div className="cbc-container">
+      <div className="inner-container">
         <h2>Weekly Church Programs</h2>
-        <p className="program-description">
-          Explore our various programs and services
-        </p>
+
         <div className="program-list">
           <div className="program-item">
             <h3>Sundays</h3>

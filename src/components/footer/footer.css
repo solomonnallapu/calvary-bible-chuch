@@ -44,7 +44,7 @@ footer h3 {
 }
 footer li,
 footer p {
-  padding: 10px 0;
+  padding: 0 0 1em 0;
 }
 footer li {
   list-style: none;
@@ -128,5 +128,11 @@ svg:hover.social-icon path {
 @media (max-width: 767px) {
   .footerWrapper {
     grid-template-columns: 1fr;
+  }
+  footer iframe {
+    width: 87vw;
+  }
+  #cbcfooter {
+    background-position: center;
   }
 }
