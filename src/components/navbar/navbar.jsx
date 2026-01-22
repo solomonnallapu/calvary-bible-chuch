@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./navbar.css";
 import logo from "../../assets/images/logo.jpeg";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -24,10 +25,12 @@ const Navbar = () => {
           </button>
           <ul className={`links ${open ? "open" : ""}`}>
             <li>
-              <a href="#">Home</a>
+              <NavLink to="*" end>
+                Home
+              </NavLink>
             </li>
             <li>
-              <a href="#">About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
               <a href="https://www.youtube.com/@CBCTRUELIFE" target="_blank">
