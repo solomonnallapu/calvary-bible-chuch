@@ -1,0 +1,273 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+embed,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+:root {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --logo-blue: #013777;
+  --logo-yellow: #db8f03;
+}
+.cbc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h4.c-underline {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  background: var(--logo-blue);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 1px;
+  margin: 0 0 20px 0;
+  display: inline-block;
+}
+.inner-container {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* make the banner the positioned container */
+.banner {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 80px;
+  color: #fff;
+  display: flex;
+  align-items: center; /* vertical center */
+}
+
+/* overlay */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* keep content above overlay */
+.banner > * {
+  position: relative;
+  z-index: 2;
+}
+.banner-text {
+  text-align: left;
+}
+
+.banner-text h1 span {
+  display: block;
+  letter-spacing: 0.01em;
+  padding: 5px 0;
+}
+.banner-text span {
+  font-size: 1.5em;
+  display: inline-block;
+  padding: 0 0 1em 0;
+}
+.banner-text h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: var(--logo-yellow);
+}
+.banner-text p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 1em 0;
+}
+/* Initial hidden state */
+.banner-text span,
+.banner-text h1,
+.banner-text p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.9s ease forwards;
+}
+
+/* Staggered timing */
+.banner-text span {
+  animation-delay: 0.2s;
+}
+
+.banner-text h1 {
+  animation-delay: 0.5s;
+}
+
+.banner-text p {
+  animation-delay: 1s;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.programs {
+  padding: 5em 0;
+}
+.programs h2 {
+  font-size: 2.5em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  color: var(--logo-blue);
+  padding: 10px 0;
+  border-radius: 1px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.program-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .program-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .program-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.program-item {
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #000;
+}
+.program-item h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: var(--logo-yellow);
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-size: 1.1em;
+}
+.program-item li {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 2em;
+  font-size: 0.9em;
+}

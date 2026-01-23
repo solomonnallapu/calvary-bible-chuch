@@ -11,9 +11,9 @@ const Navbar = () => {
       <div className="cbc-container">
         <div className="nav-wrapper">
           <div className="logo">
-            <a href="/">
-              <img src={logo} alt="Calvary Bible Church logo" />
-            </a>
+            <NavLink to="/">
+              <img src={logo} alt="Calvary Bible Church" />
+            </NavLink>
           </div>
           {/* Hamburger */}
           <button
@@ -25,7 +25,7 @@ const Navbar = () => {
           </button>
           <ul className={`links ${open ? "open" : ""}`}>
             <li>
-              <NavLink to="*" end>
+              <NavLink to="/" end>
                 Home
               </NavLink>
             </li>

@@ -1,6 +1,7 @@
 import "./footer.css";
 import footerBg from "../../assets/images/cbc-img.jpg";
 import logo from "../../assets/images/cbc-logo-white.png";
+import { NavLink } from "react-router";
 function Footer() {
   return (
     <footer
@@ -20,10 +21,12 @@ function Footer() {
             <h4 className="c-underline">QUICK LINKS</h4>
             <ul>
               <li>
-                <a href="/">Home</a>
+                <NavLink to="/" end>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <a href="/about">About</a>
+                <NavLink to="/about">About</NavLink>
               </li>
               <li>
                 <a

@@ -1,0 +1,83 @@
+/* Page wrapper */
+.about-page {
+  width: 100%;
+}
+
+/* Parallax Hero */
+.about-hero {
+  height: 70vh;
+  background-image: url("../../assets/images/cbc-img.jpg");
+  background-attachment: fixed;
+  background-position: 100% 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Dark overlay for readability */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* Text Overlay */
+.about-hero-overlay {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  padding: 0 1rem;
+}
+
+.about-hero-overlay h2 {
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.about-hero-overlay p {
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+
+.about-content h2 {
+  font-size: 3em;
+  color: var(--logo-blue);
+  margin: 0 0 1.5em 0;
+  text-align: center;
+  position: relative;
+}
+.about-content h2::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 40%;
+  background-color: var(--logo-yellow);
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+section.about-content {
+  padding: 4em 0;
+}
+.about-content p {
+  line-height: 1.7em;
+  color: #000;
+  font-size: 1.5em;
+}
+.about-content li {
+  font-size: 1.5em;
+  line-height: 2em;
+  padding: 0 10px;
+  margin: 0 2em;
+}
+.about-content li::marker {
+  color: var(--logo-yellow);
+  content: "✤";
+}
